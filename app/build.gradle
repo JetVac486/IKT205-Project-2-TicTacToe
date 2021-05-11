@@ -9,7 +9,7 @@ android {
     buildToolsVersion "30.0.3"
 
     defaultConfig {
-        applicationId "no.uia.ikt205.knotsandcrosses"
+        applicationId "no.uia.ikt205.tictactoe"
         minSdkVersion 24
         targetSdkVersion 30
         versionCode 1

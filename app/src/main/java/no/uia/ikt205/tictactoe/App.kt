@@ -1,11 +1,11 @@
-package no.uia.ikt205.knotsandcrosses
+package no.uia.ikt205.tictactoe
 
 import android.app.Application
 
 class App:Application() {
 
     companion object{
-        lateinit var context: App private set
+        lateinit var context: Application
     }
 
     override fun onCreate() {

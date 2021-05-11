@@ -1,11 +1,27 @@
-package no.uia.ikt205.knotsandcrosses.api.data
+package no.uia.ikt205.tictactoe.api.data
 
 import android.os.Parcelable
 import kotlinx.android.parcel.Parcelize
-
-typealias GameState = List<List<Int>>
+import org.json.JSONArray
 
 @Parcelize
-data class Game(val players:MutableList<String>, val gameId:String, val state:GameState ):Parcelable
+data class Game(var players:MutableList<String>, var gameId:String, var state:MutableList<MutableList<Int>> ):Parcelable
+
+data class GameState(var state: MutableList<MutableList<Int>>){
+    fun toJSONArray():JSONArray{
+        val arrayState = JSONArray()
+
+        // :^)
+        state.forEach {
+            val rowStates = JSONArray()
+            it.forEach {
+                rowStates.put(it)
+            }
+            arrayState.put(rowStates)
+        }
+        return arrayState
+    }
+}
+
 
 

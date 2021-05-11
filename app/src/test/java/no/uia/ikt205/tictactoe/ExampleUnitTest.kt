@@ -1,7 +1,7 @@
 package no.uia.ikt205.tictactoe
 
-import no.uia.ikt205.knotsandcrosses.api.GameService
-import no.uia.ikt205.knotsandcrosses.api.data.Game
+import no.uia.ikt205.tictactoe.api.GameService
+import no.uia.ikt205.tictactoe.api.data.Game
 import org.junit.Test
 
 import org.junit.Assert.*
