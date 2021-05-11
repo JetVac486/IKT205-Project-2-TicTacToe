@@ -16,4 +16,5 @@
     <string name="playerturns">Player Turn Text</string>
     <string name="player_1">Player 1: X</string>
     <string name="player_2">Player 2: O</string>
+    <string name="cpu">Player vs CPU</string>
 </resources>

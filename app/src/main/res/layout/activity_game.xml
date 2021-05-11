@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".GameActivity">
+    tools:context="no.uia.ikt205.tictactoe.GameActivity">
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -19,7 +19,7 @@
             android:id="@+id/playerturns"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/playerturns"
+            android:text="Text"
             android:textAlignment="center"
             android:textSize="24sp"
             android:textStyle="bold" />
@@ -47,6 +47,7 @@
                     android:layout_weight="1"
                     android:onClick="btnEvent"
                     android:text=""
+                    android:backgroundTint="@color/teal_200"
                     android:textSize="34sp" />
 
                 <Button
@@ -57,6 +58,7 @@
                     android:text=""
                     android:layout_margin="4dp"
                     android:onClick="btnEvent"
+                    android:backgroundTint="@color/teal_200"
                     android:textSize="34sp"/>
 
                 <Button
@@ -67,6 +69,7 @@
                     android:text=""
                     android:layout_margin="4dp"
                     android:onClick="btnEvent"
+                    android:backgroundTint="@color/teal_200"
                     android:textSize="34sp"/>
             </LinearLayout>
 
@@ -83,6 +86,7 @@
                     android:text=""
                     android:layout_margin="4dp"
                     android:onClick="btnEvent"
+                    android:backgroundTint="@color/teal_200"
                     android:textSize="34sp"/>
 
                 <Button
@@ -93,6 +97,7 @@
                     android:text=""
                     android:layout_margin="4dp"
                     android:onClick="btnEvent"
+                    android:backgroundTint="@color/teal_200"
                     android:textSize="34sp"/>
 
                 <Button
@@ -103,6 +108,7 @@
                     android:text=""
                     android:layout_margin="4dp"
                     android:onClick="btnEvent"
+                    android:backgroundTint="@color/teal_200"
                     android:textSize="34sp"/>
             </LinearLayout>
 
@@ -119,6 +125,7 @@
                     android:text=""
                     android:layout_margin="4dp"
                     android:onClick="btnEvent"
+                    android:backgroundTint="@color/teal_200"
                     android:textSize="34sp"/>
 
                 <Button
@@ -129,6 +136,7 @@
                     android:text=""
                     android:layout_margin="4dp"
                     android:onClick="btnEvent"
+                    android:backgroundTint="@color/teal_200"
                     android:textSize="34sp"/>
 
                 <Button
@@ -139,24 +147,83 @@
                     android:text=""
                     android:layout_margin="4dp"
                     android:onClick="btnEvent"
+                    android:backgroundTint="@color/teal_200"
                     android:textSize="34sp"/>
 
             </LinearLayout>
-            <TextView
-                android:id="@+id/player_1"
+
+            <Button
+                android:id="@+id/playAgain"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/player_1"
-                android:textSize="18sp"
-                android:textStyle="normal" />
+                android:backgroundTint="@color/teal_200"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                android:text="Play again?" />
+
             <TextView
-                android:id="@+id/player_2"
+                android:id="@+id/Score"
+                android:text="Score"
                 android:layout_width="wrap_content"
+                android:layout_marginLeft="130dp"
+                android:gravity="center"
                 android:layout_height="wrap_content"
-                android:text="@string/player_2"
-                android:textSize="18sp"
-                android:textStyle="normal" />
+                android:textStyle="bold"
+                android:textSize="26sp"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_height="40dp"
+                android:layout_width="match_parent">
+                <TextView
+                    android:id="@+id/player_1"
+                    android:text="Player 1: X"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="50"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:textStyle="normal"
+                    android:textSize="22sp"/>
+                <TextView
+                    android:id="@+id/player_2"
+                    android:text="Player 2: O"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="50"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:textStyle="normal"
+                    android:textSize="22sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_height="40dp"
+                android:layout_width="match_parent">
+                <TextView
+                    android:id="@+id/player_1_score"
+                    android:text="0"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="50"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:textStyle="normal"
+                    android:textSize="24sp"/>
+                <TextView
+                    android:id="@+id/player_2_score"
+                    android:text="0"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="50"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:textStyle="normal"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
         </LinearLayout>
+
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
