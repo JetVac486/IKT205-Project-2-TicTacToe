@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="no.uia.ikt205.tictactoe.CPUGameActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/winindex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Player Vs CPU"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:paddingTop="25dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnone"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="4dp"
+                    android:layout_weight="1"
+                    android:onClick="buClick"
+                    android:text=""
+                    android:backgroundTint="@color/teal_200"
+                    android:textSize="34sp" />
+
+                <Button
+                    android:id="@+id/btntwo"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:layout_margin="4dp"
+                    android:onClick="buClick"
+                    android:backgroundTint="@color/teal_200"
+                    android:textSize="34sp"/>
+
+                <Button
+                    android:id="@+id/btnthree"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:layout_margin="4dp"
+                    android:onClick="buClick"
+                    android:backgroundTint="@color/teal_200"
+                    android:textSize="34sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnfour"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:layout_margin="4dp"
+                    android:onClick="buClick"
+                    android:backgroundTint="@color/teal_200"
+                    android:textSize="34sp"/>
+
+                <Button
+                    android:id="@+id/btnfive"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:layout_margin="4dp"
+                    android:onClick="buClick"
+                    android:backgroundTint="@color/teal_200"
+                    android:textSize="34sp"/>
+
+                <Button
+                    android:id="@+id/btnsix"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:layout_margin="4dp"
+                    android:onClick="buClick"
+                    android:backgroundTint="@color/teal_200"
+                    android:textSize="34sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnseven"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:layout_margin="4dp"
+                    android:onClick="buClick"
+                    android:backgroundTint="@color/teal_200"
+                    android:textSize="34sp"/>
+
+                <Button
+                    android:id="@+id/btneight"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:layout_margin="4dp"
+                    android:onClick="buClick"
+                    android:backgroundTint="@color/teal_200"
+                    android:textSize="34sp"/>
+
+                <Button
+                    android:id="@+id/btnnine"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:layout_margin="4dp"
+                    android:onClick="buClick"
+                    android:backgroundTint="@color/teal_200"
+                    android:textSize="34sp"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/reset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/teal_200"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                android:text="Play again?" />
+
+            <TextView
+                android:id="@+id/Score"
+                android:text="Score"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="130dp"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="26sp"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_height="40dp"
+                android:layout_width="match_parent">
+                <TextView
+                    android:id="@+id/player_1"
+                    android:text="Player 1: X"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="50"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:textStyle="normal"
+                    android:textSize="22sp"/>
+                <TextView
+                    android:id="@+id/player_2"
+                    android:text="Computer: O"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="50"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:textStyle="normal"
+                    android:textSize="22sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_height="40dp"
+                android:layout_width="match_parent">
+                <TextView
+                    android:id="@+id/playerscore"
+                    android:text="0"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="50"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:textStyle="normal"
+                    android:textSize="24sp"/>
+                <TextView
+                    android:id="@+id/cpuscore"
+                    android:text="0"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="58"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:textStyle="normal"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

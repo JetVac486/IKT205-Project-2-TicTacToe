@@ -27,6 +27,10 @@ class MainActivity : AppCompatActivity() , GameDialogListener {
         binding.joinGameButton.setOnClickListener {
             joinGame()
         }
+        binding.CPUGameButton.setOnClickListener {
+            val intent = Intent(this, CPUGameActivity::class.java)
+            startActivity(intent);
+        }
     }
     // When clicking on "Start" button CreateGameDialog pops up
     private fun createNewGame(){

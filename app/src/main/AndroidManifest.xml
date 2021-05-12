@@ -15,6 +15,7 @@
         android:theme="@style/Theme.ThGame"
         android:usesCleartextTraffic="true">
         <activity android:name="no.uia.ikt205.tictactoe.GameActivity"></activity>
+        <activity android:name="no.uia.ikt205.tictactoe.CPUGameActivity"></activity>
         <activity android:name="no.uia.ikt205.tictactoe.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
