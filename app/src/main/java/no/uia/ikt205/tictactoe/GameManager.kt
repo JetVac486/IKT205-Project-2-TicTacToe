@@ -61,6 +61,17 @@ object GameManager {
         }
     }
 
+    fun restartGame(gameId:String, callback:PollServiceCallback){
+        GameService.updateGame(gameId, StartingGameState) { game: Game?, err: Int? ->
+            if (err != null) {
+                Log.e(TAG, "Error restarting game, error code: $err")
+            } else {
+                Log.d(TAG, "Restarted game: " + game!!.gameId)
+                callback(game)
+            }
+        }
+    }
+
     // Error or success code when polling game from webservice.
     fun pollGame(gameId:String, callback:PollServiceCallback){
         GameService.pollGame(gameId) { game: Game?, err: Int? ->
@@ -75,4 +86,5 @@ object GameManager {
             }
         }
     }
+
 }
