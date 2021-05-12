@@ -83,7 +83,7 @@ class CPUGameActivity : AppCompatActivity(){
                 AutoPlay()
             }
         }else{
-            buSelected.text = "o"
+            buSelected.text = "O"
             player2.add(cellID)
             activePlayer = 1
             buSelected.setBackgroundColor(Color.parseColor("#ffff00"))
@@ -197,7 +197,7 @@ class CPUGameActivity : AppCompatActivity(){
         }
         if (winner == 2) {
             cpuPoints++
-            cpuscore.text = "$cpuPoints}"
+            cpuscore.text = "${cpuPoints}"
         }
     }
 }
