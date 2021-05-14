@@ -50,10 +50,10 @@ class CPUGameActivity : AppCompatActivity(){
         )
     }
 
-    fun buClick(view: View){
-        val buSelected = view as Button
+    fun btnClick(view: View){
+        val btnSelected = view as Button
         var cellID = 0
-        when(buSelected.id){
+        when(btnSelected.id){
             R.id.btnone -> cellID = 1
             R.id.btntwo -> cellID = 2
             R.id.btnthree -> cellID = 3
@@ -65,7 +65,7 @@ class CPUGameActivity : AppCompatActivity(){
             R.id.btnnine -> cellID = 9
         }
 
-        playGame(cellID,buSelected)
+        playGame(cellID,btnSelected)
     }
 
     var player1 = ArrayList<Int>()
@@ -73,22 +73,22 @@ class CPUGameActivity : AppCompatActivity(){
     var activePlayer = 1
     val a = 5
 
-    private fun playGame(cellID: Int, buSelected: Button) {
+    private fun playGame(cellID: Int, btnSelected: Button) {
         if(activePlayer==1){
-            buSelected.text = "X"
+            btnSelected.text = "X"
             player1.add(cellID)
             activePlayer = 2
-            buSelected.setBackgroundColor(Color.parseColor("#FF03DAC5"))
+            btnSelected.setBackgroundColor(Color.parseColor("#FF03DAC5"))
             if(player1.size < a){
                 AutoPlay()
             }
         }else{
-            buSelected.text = "O"
+            btnSelected.text = "O"
             player2.add(cellID)
             activePlayer = 1
-            buSelected.setBackgroundColor(Color.parseColor("#ffff00"))
+            btnSelected.setBackgroundColor(Color.parseColor("#ffff00"))
         }
-        buSelected.isEnabled = false;
+        btnSelected.isEnabled = false;
         checkWinner()
     }
 
@@ -145,9 +145,9 @@ class CPUGameActivity : AppCompatActivity(){
         val randIndex = r.nextInt(emptyCells.size-0)+0
         val cellID = emptyCells[randIndex]
 
-        var buSelected: Button?
+        var btnSelected: Button?
 
-        buSelected = when(cellID){
+        btnSelected = when(cellID){
             1-> btnone
             2-> btntwo
             3-> btnthree
@@ -163,7 +163,7 @@ class CPUGameActivity : AppCompatActivity(){
 
         }
 
-        playGame(cellID,buSelected)
+        playGame(cellID,btnSelected)
     }
 
     private fun disableBoxes() {
@@ -201,3 +201,9 @@ class CPUGameActivity : AppCompatActivity(){
         }
     }
 }
+
+
+/*
+* ---Note---
+* Poengsum fungerer men ikke klart å fikse slik at poengsum blir med videre i flere runder, max score er 1 pga win 1 gang før poengsum resettes ved trykk på play again.
+* */

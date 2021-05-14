@@ -48,3 +48,9 @@ Spiller mot AI/CPU, computer vant:
 # Author
 
 Mats Haugland Johansen
+
+# Credits
+
+Generel hjelp av arbeidspartner og codereviewer Wiliam Johansen som hjulpet med: 
+å svare på spørsmål, hjulpet med kode og informasjon & diskusjon.
+

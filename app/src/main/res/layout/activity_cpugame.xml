@@ -45,7 +45,7 @@
                     android:layout_height="100dp"
                     android:layout_margin="4dp"
                     android:layout_weight="1"
-                    android:onClick="buClick"
+                    android:onClick="btnClick"
                     android:text=""
                     android:backgroundTint="@color/teal_200"
                     android:textSize="34sp" />
@@ -57,7 +57,7 @@
                     android:layout_weight="1"
                     android:text=""
                     android:layout_margin="4dp"
-                    android:onClick="buClick"
+                    android:onClick="btnClick"
                     android:backgroundTint="@color/teal_200"
                     android:textSize="34sp"/>
 
@@ -68,7 +68,7 @@
                     android:layout_weight="1"
                     android:text=""
                     android:layout_margin="4dp"
-                    android:onClick="buClick"
+                    android:onClick="btnClick"
                     android:backgroundTint="@color/teal_200"
                     android:textSize="34sp"/>
             </LinearLayout>
@@ -85,7 +85,7 @@
                     android:layout_weight="1"
                     android:text=""
                     android:layout_margin="4dp"
-                    android:onClick="buClick"
+                    android:onClick="btnClick"
                     android:backgroundTint="@color/teal_200"
                     android:textSize="34sp"/>
 
@@ -96,7 +96,7 @@
                     android:layout_weight="1"
                     android:text=""
                     android:layout_margin="4dp"
-                    android:onClick="buClick"
+                    android:onClick="btnClick"
                     android:backgroundTint="@color/teal_200"
                     android:textSize="34sp"/>
 
@@ -107,7 +107,7 @@
                     android:layout_weight="1"
                     android:text=""
                     android:layout_margin="4dp"
-                    android:onClick="buClick"
+                    android:onClick="btnClick"
                     android:backgroundTint="@color/teal_200"
                     android:textSize="34sp"/>
             </LinearLayout>
@@ -124,7 +124,7 @@
                     android:layout_weight="1"
                     android:text=""
                     android:layout_margin="4dp"
-                    android:onClick="buClick"
+                    android:onClick="btnClick"
                     android:backgroundTint="@color/teal_200"
                     android:textSize="34sp"/>
 
@@ -135,7 +135,7 @@
                     android:layout_weight="1"
                     android:text=""
                     android:layout_margin="4dp"
-                    android:onClick="buClick"
+                    android:onClick="btnClick"
                     android:backgroundTint="@color/teal_200"
                     android:textSize="34sp"/>
 
@@ -146,7 +146,7 @@
                     android:layout_weight="1"
                     android:text=""
                     android:layout_margin="4dp"
-                    android:onClick="buClick"
+                    android:onClick="btnClick"
                     android:backgroundTint="@color/teal_200"
                     android:textSize="34sp"/>
 
